@@ -1,16 +1,21 @@
 {
   "name": "aproxy15",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Data compression service that converts images to low-res WebP or JPEG on the fly. Used in Bandwidth-Hero browser extension.",
   "license": "MIT",
   "scripts": {
-    "start": "ntl dev",
-    "test": "jest tests/index.test.js"
+    "start": "serverless offline",
+    "test": "jest --watchAll"
   },
   "dependencies": {
-    "jimp": "^0.16.13",
-    "node-fetch": "^2.7.0",
-    "sharp": "^0.32.4",
-    "jest": "^27.4.5"
+    "axios": "^1.7.7",
+    "jimp": "^0.22.12",
+    "lodash": "^4.17.21",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "serverless": "^3.39.0",
+    "serverless-offline": "^13.6.0"
   }
 }
